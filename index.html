@@ -5,12 +5,13 @@
     <link href="styles/index.css" rel="stylesheet" />
     <meta charset="utf-8" />
     <meta name="viewport" />
+    <script src="imageMapResizer.min.js"></script>
 </head>
 
 <body class="body">
     <div class="wrapper">
-        <div class="one"> <img src="images/14_Union.gif" width="100%" height="100%"> </div>
-        <div> <img src="images/14_Union_2.gif" width="100%" height="100%"></div>
+        <img src="images/14_Union.gif" width="100%" height="100%" usemap="#image-map">
+        <div class="two"> <img src="images/14_Union_2.gif" width="100%" height="100%" usemap="#14_Union_2"></div>
         <div> <img src="images/23_2.gif" width="100%" height="100%"></div>
         <div> <img src="images/34_12.gif" width="100%" height="100%"></div>
         <div> <img src="images/6_WHouston.gif" width="100%" height="100%"></div>
@@ -31,6 +32,26 @@
         <div> <img src="images/Union_Metropolitan.gif" width="100%" height="100%"></div>
     </div>
 
+    <map name="image-map">
+        <area target="_blank" alt="14_Union" title="14_Union" href="https://www.image-map.net/" coords="176,186,145,161"
+            shape="rect">
+    </map>
+
+    <!--    onclick="window.open('print.html', 
+                         'newwindow', 
+                         'width=300,height=250'); 
+              return false;"
+    -->
+
+    <map name="14_Union_2">
+        <area target="" alt="14_Union_2" title="14_Union_2" href="https://www.image-map.net/" coords="162,112,140,92"
+            shape="rect">
+    </map>
+
 </body>
+
+<script>
+    imageMapResize();
+</script>
 
 </html>

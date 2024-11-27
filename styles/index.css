@@ -1,5 +1,6 @@
 .wrapper {
     display: grid;
+    position: relative;
     grid-template-columns: repeat(5, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
@@ -7,26 +8,9 @@
     min-height: 100vh;
 }
 
+
 * {
     overflow: hidden;
     margin: 0;
 
-}
-
-.one:after {
-    content: '\A';
-    position: absolute;
-    min-width: 20vw;
-    min-height: 25vh;
-    top: 0;
-    left: 0;
-    background-image: url('/images/PXL.jpg');
-    background-size: 20vw, 20vh;
-    opacity: 0;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-}
-
-.one:hover:after {
-    opacity: 0.9;
 }
