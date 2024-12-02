@@ -6,11 +6,25 @@
     grid-row-gap: 0px;
     margin: 0 auto;
     min-height: 100vh;
+    z-index: 1
 }
 
 
 * {
     overflow: hidden;
     margin: 0;
+
+}
+
+.about {
+    position: relative;
+    display: flex;
+    left: _px;
+    top: _px;
+    z-index: 2
+}
+
+p {
+    color: black;
 
 }
